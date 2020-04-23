@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>www.akashnews.com</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="{%static "css/anews.css"%}">
+    <style media="screen">
+
+      body{
+        background-color: black;
+      }
+      ul{
+        color:white;
+        font-size :30px;
+      }
+      h1{
+        color: red;
+        text-align : center;
+      }
+    </style>
+  </head>
+  <body>
+    <<h1>Akash Spicy News information..HeadLines of today.</h1><hr>
+    <<ul>
+      <li>{{news1}}</li>
+      <li>{{news2}}</li>
+      <li>{{news3}}</li>
+      <li>{{news4}}</li>
+      <li>{{news5}}</li>
+    </ul>
+  </body>
+</html>

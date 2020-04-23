@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>www.akashnews.com</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="{%static "css/anews.css"%}">
+    <style media="screen">
+
+      body{
+        background-color: black;
+      }
+      ul{
+        color:white;
+        font-size :30px;
+      }
+      h1{
+        color: red;
+        text-align : center;
+      }
+      img{
+        width : 20%;
+        height : 200px;
+        border : 3px solid blue;
+        margin-rigth : 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Akash movie News information..HeadLines of today.</h1><hr>
+    <ul>
+      <li display="4">{{news1}}<img src="{%static "images/img5.jpg"%}" alt=""></li>
+      <li>{{news2}} <img src="{%static "images/img1.jpg"%}" alt=""></li>
+      <li>{{news3}}  <img src="{%static "images/img2.jpg"%}" alt=""></li>
+      <li>{{news4}}  <img src="{%static "images/img3.jpg"%}" alt=""></li>
+      <li>{{news5}}  <img src="{%static "images/img4.jpg"%}" alt=""></li>
+    </ul>
+
+  </body>
+</html>
